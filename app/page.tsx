@@ -20,10 +20,10 @@ export default function HomePage() {
               </div>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
+              <Link href="#" className="text-orange-600 font-semibold border-b-2 border-orange-600 pb-1">
                 Home
               </Link>
-              <Link href="#menu" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
+              <Link href="/menu" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Menu
               </Link>
               <Link href="#how-it-works" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
@@ -78,18 +78,20 @@ export default function HomePage() {
                   <div className="bg-green-500 text-white p-2 rounded-full">
                     <Truck className="h-5 w-5" />
                   </div>
-                  <div className="text-xl font-bold text-green-700">FREE Home Delivery</div>
+                  <div className="text-2xl font-bold text-green-700">FREE Home Delivery</div>
                 </div>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  size="lg"
-                  className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg"
-                >
-                  View Full Menu
-                </Button>
+                <Link href="/menu">
+                  <Button
+                    size="lg"
+                    className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg"
+                  >
+                    View Full Menu
+                  </Button>
+                </Link>
                 <Button
                   size="lg"
                   variant="outline"
@@ -327,8 +329,8 @@ export default function HomePage() {
                   <span className="font-semibold">Monday to Saturday</span>
                 </div>
                 <div className="text-sm">
-                  <div>Lunch: 11:00 AM - 1:30 PM</div>
-                  <div>Dinner: 7:00 PM - 9:30 PM</div>
+                  <div>Day Delivery: 11:00 AM - 1:30 PM</div>
+                  <div>Night Delivery: 7:00 PM - 9:30 PM</div>
                 </div>
                 <div className="text-sm text-gray-400 mt-2">No service on Sundays and public holidays</div>
               </div>
@@ -339,9 +341,11 @@ export default function HomePage() {
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">© 2025 Neelam Ghar Ka Khana. All rights reserved.</p>
               <div className="flex space-x-4 mt-4 md:mt-0">
-                <Button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-semibold">
-                  View Full Menu
-                </Button>
+                <Link href="/menu">
+                  <Button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-semibold">
+                    View Full Menu
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
