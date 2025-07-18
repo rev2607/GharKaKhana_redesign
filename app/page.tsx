@@ -12,24 +12,31 @@ export default function HomePage() {
       <header className="bg-white shadow-sm border-b border-orange-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-4">
               <Image src="/images/logo.png" alt="Ghar-Ka-Khana Logo" width={200} height={60} className="h-12 w-auto" />
+              <div className="hidden lg:block">
+                <div className="text-lg font-bold text-gray-900">Cloud Kitchen</div>
+                <div className="text-sm text-gray-600">Free Homely Food Delivery at your Home & Office</div>
+              </div>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
+              <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
+                Home
+              </Link>
               <Link href="#menu" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Menu
               </Link>
               <Link href="#how-it-works" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
-                How It Works
+                Before Ordering
               </Link>
               <Link href="#about" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 About
               </Link>
               <Link href="#contact" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
-                Contact
+                Contact Us
               </Link>
               <Button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-semibold">
-                Order Now
+                Login
               </Button>
             </nav>
           </div>
@@ -84,14 +91,14 @@ export default function HomePage() {
                   size="lg"
                   className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg"
                 >
-                  Order Now - ₹69
+                  View Full Menu
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
                   className="border-2 border-orange-600 text-orange-600 hover:bg-orange-50 px-8 py-4 rounded-full text-lg font-semibold bg-transparent"
                 >
-                  View Full Menu
+                  📞 8108 325 444
                 </Button>
               </div>
 
@@ -104,10 +111,6 @@ export default function HomePage() {
                 <div className="flex items-center space-x-2">
                   <Shield className="h-5 w-5 text-green-600" />
                   <span className="font-medium">100% Hygienic</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Phone className="h-5 w-5 text-blue-600" />
-                  <span className="font-medium">8108 325 444</span>
                 </div>
               </div>
             </div>
@@ -132,8 +135,8 @@ export default function HomePage() {
                     <Image
                       src="/images/delivery.png"
                       alt="Friendly delivery service"
-                      width={120}
-                      height={90}
+                      width={240}
+                      height={180}
                       className="rounded-lg object-cover"
                     />
                     <div>
@@ -222,133 +225,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Meal Plans Section */}
-      <section id="menu" className="py-16 bg-gradient-to-b from-orange-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Meal Plans</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Choose from our carefully crafted meal plans, prepared fresh daily with authentic recipes
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Promo Plan */}
-            <Card className="border-2 border-orange-300 bg-gradient-to-b from-orange-50 to-white relative overflow-hidden">
-              <div className="absolute top-4 right-4">
-                <Badge className="bg-red-500 text-white px-3 py-1 text-xs font-bold">LIMITED OFFER</Badge>
-              </div>
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Veg Promo</h3>
-                  <div className="text-3xl font-bold text-orange-600">₹69</div>
-                  <div className="text-sm text-gray-600">per meal</div>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• 3 Chapathi</li>
-                  <li>• Rice</li>
-                  <li>• 1 Bhaji</li>
-                  <li>• 1 Dal/Kadi</li>
-                  <li>• Salad/Papad/Pickle</li>
-                </ul>
-                <div className="text-center">
-                  <div className="text-lg font-semibold text-orange-600 mb-2">₹414/week</div>
-                  <div className="text-xs text-gray-600">One-time offer only</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Veg Normal */}
-            <Card className="border-2 border-gray-200 hover:border-orange-300 transition-colors">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Veg Normal</h3>
-                  <div className="text-3xl font-bold text-gray-900">₹75</div>
-                  <div className="text-sm text-gray-600">per meal</div>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• Chapathis</li>
-                  <li>• Rice</li>
-                  <li>• Bhaji</li>
-                  <li>• Dal/Kadi</li>
-                  <li>• Salad/Papad/Pickle</li>
-                </ul>
-                <div className="text-center space-y-1">
-                  <div className="text-sm">
-                    <span className="font-semibold">Weekly:</span> ₹450
-                  </div>
-                  <div className="text-sm">
-                    <span className="font-semibold">Monthly:</span> ₹1825
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Veg Special */}
-            <Card className="border-2 border-gray-200 hover:border-orange-300 transition-colors">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Veg Special</h3>
-                  <div className="text-3xl font-bold text-gray-900">₹85</div>
-                  <div className="text-sm text-gray-600">per meal</div>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• Chapathis</li>
-                  <li>• Rice</li>
-                  <li>• Special Bhaji</li>
-                  <li>• Dal/Kadi</li>
-                  <li>• Salad/Papad/Pickle</li>
-                  <li>• Compliment</li>
-                </ul>
-                <div className="text-center space-y-1">
-                  <div className="text-sm">
-                    <span className="font-semibold">Weekly:</span> ₹510
-                  </div>
-                  <div className="text-sm">
-                    <span className="font-semibold">Monthly:</span> ₹2075
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Combo Special */}
-            <Card className="border-2 border-green-200 bg-gradient-to-b from-green-50 to-white">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Combo Special</h3>
-                  <div className="text-3xl font-bold text-green-600">₹120</div>
-                  <div className="text-sm text-gray-600">per meal</div>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• Chapathi</li>
-                  <li>• Rice</li>
-                  <li>• Special Chicken Curry</li>
-                  <li>• Salad/Papad/Pickle</li>
-                  <li>• Compliment</li>
-                </ul>
-                <div className="text-center space-y-1">
-                  <div className="text-sm">
-                    <span className="font-semibold">Weekly:</span> ₹545
-                  </div>
-                  <div className="text-sm">
-                    <span className="font-semibold">Monthly:</span> ₹2215
-                  </div>
-                  <div className="text-xs text-green-600 mt-2">Wed: Chicken, Other days: Veg</div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-8">
-            <Button
-              size="lg"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full text-lg font-semibold"
-            >
-              View Full Menu
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* How It Works Section */}
       <section id="how-it-works" className="py-16 bg-white">
@@ -466,30 +343,13 @@ export default function HomePage() {
               <p className="text-gray-400 text-sm">© 2025 Neelam Ghar Ka Khana. All rights reserved.</p>
               <div className="flex space-x-4 mt-4 md:mt-0">
                 <Button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-semibold">
-                  Order Now
+                  View Full Menu
                 </Button>
               </div>
             </div>
           </div>
 
-          {/* Important Notes */}
-          <div className="mt-8 p-6 bg-gray-800 rounded-lg">
-            <h4 className="text-lg font-bold mb-4 text-orange-400">Important Information</h4>
-            <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-300">
-              <ul className="space-y-2">
-                <li>• Orders must be placed 24 hours in advance</li>
-                <li>• Free delivery within CBD Belapur (Sectors 11-15, 19-23, 29-31)</li>
-                <li>• Delivery up to 1st floor only</li>
-                <li>• Weekly = 6 days, Monthly = 25 days</li>
-              </ul>
-              <ul className="space-y-2">
-                <li>• Refundable deposit of ₹299 for tiffin box</li>
-                <li>• Payment 100% in advance</li>
-                <li>• Return empty tiffin when receiving new one</li>
-                <li>• Bhaji changes daily for variety</li>
-              </ul>
-            </div>
-          </div>
+
         </div>
       </footer>
     </div>
