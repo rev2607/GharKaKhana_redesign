@@ -290,7 +290,7 @@ export default function MenuPage() {
               Contact us to place your order and enjoy authentic home-style meals delivered fresh to your doorstep.
             </p>
             <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg">
-              Contact Us to Order
+              📞 +91 8108 325 444
             </Button>
           </div>
         </div>
@@ -368,11 +368,6 @@ export default function MenuPage() {
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">© 2025 Neelam Ghar Ka Khana. All rights reserved.</p>
-              <div className="flex space-x-4 mt-4 md:mt-0">
-                <Button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-semibold">
-                  📞 8108 325 444
-                </Button>
-              </div>
             </div>
           </div>
         </div>
