@@ -26,7 +26,7 @@ export default function MenuPage() {
               <Link href="/menu" className="text-orange-600 font-semibold border-b-2 border-orange-600 pb-1">
                 Menu
               </Link>
-              <Link href="/#how-it-works" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
+              <Link href="/before-ordering" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Before Ordering
               </Link>
               <Link href="/#about" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
