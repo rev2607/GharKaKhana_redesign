@@ -74,15 +74,12 @@ export default function HomePage() {
 
               {/* Free Delivery Highlight */}
               <div className="bg-green-50 border-2 border-green-200 p-4 rounded-xl">
-                <div className="flex items-center space-x-3 mb-2">
+                <div className="flex items-center space-x-3">
                   <div className="bg-green-500 text-white p-2 rounded-full">
                     <Truck className="h-5 w-5" />
                   </div>
                   <div className="text-xl font-bold text-green-700">FREE Home Delivery</div>
                 </div>
-                <p className="text-sm text-green-600 ml-11">
-                  Free delivery available within CBD Belapur Sectors 11-15, 19-23, and 29-31
-                </p>
               </div>
 
               {/* CTA Buttons */}
@@ -159,16 +156,16 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Why Choose Neelam's Ghar-Ka-Khana?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We're committed to bringing you the authentic taste of home with every meal
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <Card className="border-2 border-orange-100 hover:border-orange-300 transition-colors">
               <CardContent className="p-8 text-center">
                 <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -228,7 +225,7 @@ export default function HomePage() {
 
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-16 bg-white">
+      <section id="how-it-works" className="py-8 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">How It Works</h2>
