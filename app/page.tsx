@@ -29,10 +29,10 @@ export default function HomePage() {
               <Link href="/before-ordering" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Before Ordering
               </Link>
-              <Link href="#about" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
+              <Link href="/about" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 About
               </Link>
-              <Link href="#contact" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
+              <Link href="/contact" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Contact Us
               </Link>
               <Button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-semibold">
@@ -52,16 +52,16 @@ export default function HomePage() {
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             {/* Left Content */}
             <div className="space-y-6">
               {/* Introductory Offer - Most Prominent */}
               <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-6 rounded-2xl shadow-2xl transform -rotate-1 hover:rotate-0 transition-transform">
                 <div className="text-center">
-                  <div className="text-sm font-semibold mb-2 opacity-90">🎉 SPECIAL LAUNCH OFFER</div>
+                  <div className="text-sm font-semibold mb-2 opacity-90">🌟 TASTE OF HOME</div>
                   <div className="text-3xl lg:text-4xl font-bold mb-2">Your First Meal for just</div>
-                  <div className="text-5xl lg:text-6xl font-black text-yellow-300 mb-2">₹69!</div>
-                  <div className="text-sm opacity-90">One-time offer for the first week only</div>
+                  <div className="text-5xl lg:text-6xl font-black text-yellow-300 mb-2">₹79!</div>
+                  <div className="text-sm opacity-90">Grab this offer as soon as possible</div>
                 </div>
               </div>
 
@@ -78,7 +78,7 @@ export default function HomePage() {
                   <div className="bg-green-500 text-white p-2 rounded-full">
                     <Truck className="h-5 w-5" />
                   </div>
-                  <div className="text-2xl font-bold text-green-700">FREE Home Delivery</div>
+                  <div className="text-2xl font-bold text-green-700">FREE Home Delivery*</div>
                 </div>
               </div>
 
@@ -97,7 +97,7 @@ export default function HomePage() {
                   variant="outline"
                   className="border-2 border-orange-600 text-orange-600 hover:bg-orange-50 px-8 py-4 rounded-full text-lg font-semibold bg-transparent"
                 >
-                  📞 8108 325 444
+                  📞 +91 81083 25444
                 </Button>
               </div>
 
@@ -115,15 +115,15 @@ export default function HomePage() {
             </div>
 
             {/* Right Visual Content */}
-            <div className="relative">
+            <div className="relative flex justify-center lg:justify-end">
               {/* Main Food Image */}
-              <div className="relative">
+              <div className="relative max-w-lg lg:max-w-xl lg:mr-16">
                 <Image
                   src="/images/food.png"
                   alt="Delicious authentic Indian thali"
-                  width={600}
-                  height={400}
-                  className="relative rounded-3xl shadow-2xl object-cover w-full h-[450px] lg:h-[500px]"
+                  width={800}
+                  height={600}
+                  className="relative rounded-3xl object-cover w-full h-[528px] lg:h-[624px]"
                 />
               </div>
 
@@ -147,7 +147,7 @@ export default function HomePage() {
               </div>
 
               {/* Floating Quality Badge */}
-              <div className="absolute -top-4 -right-4">
+              <div className="absolute top-0 right-0">
                 <div className="bg-yellow-400 text-yellow-900 px-4 py-2 rounded-full text-sm font-bold shadow-lg transform rotate-12">
                   Fresh Daily!
                 </div>
@@ -169,11 +169,11 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <Card className="border-2 border-orange-100 hover:border-orange-300 transition-colors">
-              <CardContent className="p-8 text-center">
+              <CardContent className="p-8 text-center h-full flex flex-col justify-center">
                 <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Truck className="h-8 w-8 text-orange-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Free Home Delivery</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Free Home Delivery*</h3>
                 <p className="text-gray-600 leading-relaxed">
                   Free delivery within CBD Belapur (Sectors 11-15, 19-23, 29-31) and other areas in Mumbai
                 </p>
@@ -186,29 +186,30 @@ export default function HomePage() {
                   <Heart className="h-8 w-8 text-green-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Quality You Can Trust</h3>
+                <p className="text-gray-600 mb-4 text-center">Fresh ingredients, never reused. Consistent taste and health in every meal.</p>
                 <ul className="text-gray-600 space-y-2 text-left">
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="h-4 w-4 text-green-600" />
-                    <span>Fresh, never-reused ingredients</span>
+                    <span>Basmathi Rice – We use only Basmathi rice in meals.</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="h-4 w-4 text-green-600" />
-                    <span>High-quality Basmati rice</span>
+                    <span>Oil – We cook using high-quality oil (e.g., Saffola).</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="h-4 w-4 text-green-600" />
-                    <span>Saffola oil for cooking</span>
+                    <span>Masala - No packaged masalas; we use fresh spices.</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <CheckCircle className="h-4 w-4 text-green-600" />
-                    <span>Fresh spices, not packaged</span>
+                    <span>Chapathi Flour – We do not use packaged flour for chapathis.</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card className="border-2 border-orange-100 hover:border-orange-300 transition-colors">
-              <CardContent className="p-8 text-center">
+              <CardContent className="p-8 text-center h-full flex flex-col justify-center">
                 <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Shield className="h-8 w-8 text-blue-600" />
                 </div>
@@ -278,7 +279,7 @@ export default function HomePage() {
                 alt="Ghar-Ka-Khana Logo"
                 width={200}
                 height={60}
-                className="h-12 w-auto mb-4 brightness-0 invert"
+                className="h-12 w-auto mb-4"
               />
               <p className="text-gray-300 mb-6 max-w-md">
                 Delicious home-cooked meals delivered to your doorstep daily. Taste the love in every bite.
@@ -286,7 +287,7 @@ export default function HomePage() {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-orange-400" />
-                  <span className="text-lg font-semibold">+91 8108 325 444</span>
+                  <span className="text-lg font-semibold">+91 81083 25444</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-orange-400" />

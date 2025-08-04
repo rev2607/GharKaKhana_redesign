@@ -29,7 +29,7 @@ export default function MenuPage() {
               <Link href="/before-ordering" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Before Ordering
               </Link>
-              <Link href="/#about" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
+              <Link href="/about" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 About
               </Link>
               <Link href="/#contact" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
@@ -62,10 +62,10 @@ export default function MenuPage() {
           </div>
 
           {/* Special Offer Banner */}
-          <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-6 rounded-2xl shadow-2xl mb-12 text-center">
-            <div className="text-2xl font-bold mb-2">🎉 SPECIAL LAUNCH OFFER</div>
-            <div className="text-4xl font-black text-yellow-300 mb-2">Your First Meal for just ₹69!</div>
-            <div className="text-lg opacity-90">One-time offer for the first week only</div>
+          <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-6 rounded-2xl shadow-2xl mb-6 text-center">
+            <div className="text-2xl font-bold mb-2">🌟 TASTE OF HOME</div>
+            <div className="text-4xl font-black text-yellow-300 mb-2">Your First Meal for just ₹79!</div>
+            <div className="text-lg opacity-90">Grab this offer as soon as possible</div>
           </div>
         </div>
       </section>
@@ -75,172 +75,241 @@ export default function MenuPage() {
         <div className="container mx-auto px-4">
 
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {/* Row 1: Vegetarian Plans */}
-            
-            {/* Card 1: Veg Promo */}
-            <Card className="border-2 border-orange-300 bg-gradient-to-b from-orange-50 to-white relative overflow-hidden">
-              <CardContent className="p-6">
-                <div className="text-center mb-4 relative">
-                  <div className="absolute -top-2 -right-2">
-                    <Badge className="bg-red-500 text-white px-3 py-1 text-xs font-bold">LIMITED OFFER</Badge>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {/* Veg Normal Plan */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-green-100">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-green-600"></div>
+              <div className="p-8 h-full flex flex-col">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                    <span className="text-2xl">🥗</span>
                   </div>
-                  <h3 className="text-xl font-bold text-green-600 mb-2">(Veg Promo) Price ₹69</h3>
+                  <h3 className="text-2xl font-bold text-green-700 mb-2">Veg Normal</h3>
+                  <div className="text-3xl font-black text-green-600">₹79</div>
+                  <div className="text-sm text-gray-500">per meal</div>
                 </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• 3 Chapathi</li>
-                  <li>• Rice</li>
-                  <li>• 1 Bhaji</li>
-                  <li>• 1 Dal/Kadi</li>
-                  <li>• Salad/Papad/Pickle</li>
-                </ul>
-                <div className="bg-yellow-50 p-3 rounded-lg text-center">
-                  <div className="text-sm font-semibold text-gray-700 mb-1">1 Week, only 1 Time offer</div>
-                  <div className="text-sm text-gray-600">Weekly (one-time offer) ₹414</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Card 2: Veg Normal */}
-            <Card className="border-2 border-gray-200 hover:border-orange-300 transition-colors">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-green-600 mb-2">(Veg Normal) Price ₹75</h3>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• Chapathis</li>
-                  <li>• Rice</li>
-                  <li>• Bhaji</li>
-                  <li>• Dal/Kadi</li>
-                  <li>• Salad/Papad/Pickle</li>
-                </ul>
-                <div className="bg-yellow-50 p-3 rounded-lg text-center space-y-1">
-                  <div className="text-sm text-gray-700">One-Day Takeaway ₹85</div>
-                  <div className="text-sm text-gray-700">Weekly ₹450</div>
-                  <div className="text-sm text-gray-700">Monthly ₹1825</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Card 3: Veg Special */}
-            <Card className="border-2 border-gray-200 hover:border-orange-300 transition-colors">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-green-600 mb-2">(Veg Special) Price ₹85</h3>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• Chapathis (May be combined)</li>
-                  <li>• Rice</li>
-                  <li>• Bhaji</li>
-                  <li>• Dal/Kadi</li>
-                  <li>• Salad/Papad/Pickle</li>
-                  <li>• Compliment</li>
-                </ul>
-                <div className="bg-yellow-50 p-3 rounded-lg text-center space-y-1">
-                  <div className="text-sm text-gray-700">One-Day Takeaway ₹95</div>
-                  <div className="text-sm text-gray-700">Weekly ₹510</div>
-                  <div className="text-sm text-gray-700">Monthly ₹2075</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Row 2: Combo & Non-Veg Plans */}
-            
-            {/* Card 4: Combo Normal NV + Veg */}
-            <Card className="border-2 border-red-200 bg-gradient-to-b from-red-50 to-white">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-red-600 mb-2">(Combo Normal NV + Veg) Price ₹110</h3>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• Chapathi</li>
-                  <li>• Rice</li>
-                  <li>• <span className="text-red-600 font-semibold">Special Chicken Curry</span></li>
-                  <li>• Salad/Papad/Pickle</li>
-                </ul>
-                <div className="bg-yellow-50 p-3 rounded-lg text-center space-y-1">
-                  <div className="text-sm text-gray-700">Weekly ₹485</div>
-                  <div className="text-sm text-gray-700">Monthly ₹1965</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Card 5: Combo Special NV + Veg */}
-            <Card className="border-2 border-red-200 bg-gradient-to-b from-red-50 to-white">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-red-600 mb-2">(Combo Special NV + Veg) Price ₹120</h3>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• Chapathi</li>
-                  <li>• Rice</li>
-                  <li>• <span className="text-red-600 font-semibold">Special Chicken Curry</span></li>
-                  <li>• Salad/Papad/Pickle</li>
-                  <li>• Compliment</li>
-                </ul>
-                <div className="bg-yellow-50 p-3 rounded-lg text-center space-y-1">
-                  <div className="text-sm text-gray-700">Weekly ₹545</div>
-                  <div className="text-sm text-gray-700">Monthly ₹2215</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Card 6: Normal Non-Veg */}
-            <Card className="border-2 border-red-200 bg-gradient-to-b from-red-50 to-white">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-red-600 mb-2">Normal Non-Veg</h3>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• Chapathi</li>
-                  <li>• Rice</li>
-                  <li>• <span className="text-red-600 font-semibold">Special Chicken Curry</span></li>
-                  <li>• Salad/Papad/Pickle</li>
-                </ul>
-                <div className="bg-yellow-50 p-3 rounded-lg text-center">
-                  <div className="text-sm text-gray-700">One-Day Takeaway ₹120</div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Row 3: Special Non-Veg & Future Plans */}
-            
-            {/* Card 7: Special Non-Veg */}
-            <Card className="border-2 border-red-200 bg-gradient-to-b from-red-50 to-white">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <h3 className="text-xl font-bold text-red-600 mb-2">Special Non-Veg</h3>
-                </div>
-                <ul className="space-y-2 text-sm text-gray-700 mb-6">
-                  <li>• Chapathi</li>
-                  <li>• Rice</li>
-                  <li>• <span className="text-red-600 font-semibold">Special Chicken Curry</span></li>
-                  <li>• Salad/Papad/Pickle</li>
-                  <li>• Compliment</li>
-                </ul>
-                <div className="bg-yellow-50 p-3 rounded-lg text-center">
-                  <div className="text-sm text-gray-700">One-Day Takeaway ₹130</div>
-                </div>
-              </CardContent>
-            </Card>
-
-
-
-            {/* Card 9: More Plans Coming Soon */}
-            <Card className="border-2 border-orange-300 bg-gradient-to-br from-orange-100 via-yellow-50 to-orange-50 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-              <CardContent className="p-6">
-                <div className="text-center h-full flex flex-col justify-center">
-                  <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-3 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 shadow-lg">
-                    <div className="text-2xl">🚀</div>
+                
+                <div className="space-y-3 flex-grow">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700">Chapathis</span>
                   </div>
-                  <h3 className="text-xl font-bold text-orange-700 mb-2">More plans are coming soon</h3>
-                  <p className="text-orange-600 text-sm font-medium mb-3">Stay tuned for exciting new meal options!</p>
-                  <div className="bg-white/70 p-3 rounded-lg border border-orange-200">
-                    <div className="text-xs text-orange-700 font-semibold">New flavors, new experiences</div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700">Rice</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700">Bhaji</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700">Dal/Kadi</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700">Salad/Papad/Pickle</span>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+
+                <div className="space-y-3 mt-auto pt-6">
+                  <div className="bg-green-50 p-4 rounded-xl">
+                    <div className="text-center">
+                      <div className="text-sm text-gray-600 mb-1">Weekly</div>
+                      <div className="text-lg font-bold text-green-700">₹474</div>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-r from-green-100 to-green-200 p-4 rounded-xl">
+                    <div className="text-center">
+                      <div className="text-sm text-gray-600 mb-1">Monthly</div>
+                      <div className="text-lg font-bold text-green-800">
+                        <span className="line-through text-gray-500">₹1975</span> ₹1925
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Veg Special Plan */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-green-100">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-green-600"></div>
+              <div className="p-8 h-full flex flex-col">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                    <span className="text-2xl">🌟</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-green-700 mb-2">Veg Special</h3>
+                  <div className="text-3xl font-black text-green-600">₹89</div>
+                  <div className="text-sm text-gray-500">per meal</div>
+                </div>
+                
+                <div className="space-y-3 flex-grow">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700">Chapathis (May be combined)</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700">Rice</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700">Bhaji</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700">Dal/Kadi</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700">Salad/Papad/Pickle</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                    <span className="text-gray-700 font-semibold text-green-600">Compliment</span>
+                  </div>
+                </div>
+
+                <div className="space-y-3 mt-auto pt-6">
+                  <div className="bg-green-50 p-4 rounded-xl">
+                    <div className="text-center">
+                      <div className="text-sm text-gray-600 mb-1">Weekly</div>
+                      <div className="text-lg font-bold text-green-700">₹534</div>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-r from-green-100 to-green-200 p-4 rounded-xl">
+                    <div className="text-center">
+                      <div className="text-sm text-gray-600 mb-1">Monthly</div>
+                      <div className="text-lg font-bold text-green-800">
+                        <span className="line-through text-gray-500">₹2225</span> ₹2175
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Combo Normal NV + Veg Plan */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-red-100">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-400 to-red-600"></div>
+              <div className="p-8 h-full flex flex-col">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
+                    <span className="text-2xl">🍗</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-red-700 mb-2">Combo Normal</h3>
+                  <div className="text-3xl font-black text-red-600">NV + Veg</div>
+                </div>
+                
+                <div className="space-y-3 flex-grow">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span className="text-gray-700">Chapathi</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span className="text-gray-700">Rice</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span className="text-red-600 font-semibold">Special Chicken Curry</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span className="text-gray-700">Salad/Papad/Pickle</span>
+                  </div>
+                </div>
+
+                <div className="space-y-3 mt-auto pt-6">
+                  <div className="bg-red-50 p-4 rounded-xl">
+                    <div className="text-center">
+                      <div className="text-sm text-gray-600 mb-1">Weekly</div>
+                      <div className="text-lg font-bold text-red-700">₹505</div>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">
+                    <div className="text-center">
+                      <div className="text-sm text-gray-600 mb-1">Monthly</div>
+                      <div className="text-lg font-bold text-red-800">
+                        <span className="line-through text-gray-500">₹2099</span> ₹2045
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Combo Special NV + Veg Plan */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-red-100">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-400 to-red-600"></div>
+              <div className="p-8 h-full flex flex-col">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
+                    <span className="text-2xl">👑</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-red-700 mb-2">Combo Special</h3>
+                  <div className="text-3xl font-black text-red-600">NV + Veg</div>
+                </div>
+                
+                <div className="space-y-3 flex-grow">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span className="text-gray-700">Chapathi</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span className="text-gray-700">Rice</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span className="text-red-600 font-semibold">Special Chicken Curry</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span className="text-gray-700">Salad/Papad/Pickle</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <span className="text-gray-700 font-semibold text-red-600">Compliment</span>
+                  </div>
+                </div>
+
+                <div className="space-y-3 mt-auto pt-6">
+                  <div className="bg-red-50 p-4 rounded-xl">
+                    <div className="text-center">
+                      <div className="text-sm text-gray-600 mb-1">Weekly</div>
+                      <div className="text-lg font-bold text-red-700">₹565</div>
+                    </div>
+                  </div>
+                  <div className="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">
+                    <div className="text-center">
+                      <div className="text-sm text-gray-600 mb-1">Monthly</div>
+                      <div className="text-lg font-bold text-red-800">
+                        <span className="line-through text-gray-500">₹2349</span> ₹2295
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* More Plans Coming Soon */}
+            <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-orange-200">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-yellow-500"></div>
+              <div className="p-8 h-full flex flex-col justify-center">
+                <div className="text-center">
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-orange-500 to-yellow-500 text-white rounded-full mb-6 shadow-lg">
+                    <span className="text-3xl">🚀</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-orange-700 mb-3">More Plans Coming Soon</h3>
+                  <p className="text-orange-600 mb-6">Stay tuned for exciting new meal options!</p>
+                  <div className="bg-white/80 p-4 rounded-xl border border-orange-200">
+                    <div className="text-sm font-semibold text-orange-700">New flavors, new experiences</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Important Notes */}
@@ -273,6 +342,10 @@ export default function MenuPage() {
                 <div className="flex items-start space-x-3">
                   <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">6</div>
                   <p className="text-gray-700 text-lg">Combo pack have 1 day (Wednesday) Chicken and remaining 5 days Veg</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">7</div>
+                  <p className="text-gray-700 text-lg">₹9/- would be additional charge if 1-Single Delivery Ordered</p>
                 </div>
               </div>
             </div>
