@@ -52,7 +52,7 @@ export default function HomePage() {
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left Content */}
             <div className="space-y-6">
               {/* Introductory Offer - Most Prominent */}
@@ -115,15 +115,15 @@ export default function HomePage() {
             </div>
 
             {/* Right Visual Content */}
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="relative">
               {/* Main Food Image */}
-              <div className="relative max-w-lg lg:max-w-xl lg:mr-16">
+              <div className="relative">
                 <Image
                   src="/images/food.png"
                   alt="Delicious authentic Indian thali"
                   width={800}
                   height={600}
-                  className="relative rounded-3xl object-cover w-full h-[528px] lg:h-[624px]"
+                  className="relative rounded-3xl object-cover w-full h-[528px] lg:h-[624px] ml-auto"
                 />
               </div>
 
