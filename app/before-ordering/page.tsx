@@ -106,7 +106,7 @@ export default function BeforeOrderingPage() {
                 alt="Ghar-Ka-Khana Logo"
                 width={200}
                 height={60}
-                className="h-12 w-auto mb-4"
+                className="h-12 w-auto mb-4 brightness-0 invert"
               />
               <p className="text-gray-300 mb-6 max-w-md">
                 Delicious home-cooked meals delivered to your doorstep daily. Taste the love in every bite.
@@ -179,4 +179,4 @@ export default function BeforeOrderingPage() {
       </footer>
     </div>
   )
-} 
+}

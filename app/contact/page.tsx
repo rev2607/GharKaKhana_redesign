@@ -1,5 +1,3 @@
-"use client"
-
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -7,50 +5,8 @@ import { Textarea } from "@/components/ui/textarea"
 import { Phone, Clock, MapPin, Mail, Send } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { useState } from "react"
-import { submitContactForm, ContactFormData } from "@/lib/contact-form"
-import { toast, Toaster } from "sonner"
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState<ContactFormData>({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    try {
-      await submitContactForm(formData)
-      toast.success('Message sent successfully! We\'ll get back to you soon.')
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
-      })
-    } catch (error) {
-      toast.error('Failed to send message. Please try again.')
-      console.error('Form submission error:', error)
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
       {/* Header */}
@@ -163,20 +119,17 @@ export default function ContactPage() {
                 <Card className="shadow-lg border-0">
                   <CardContent className="p-8">
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
-                    <form onSubmit={handleSubmit} className="space-y-6">
+                    <form className="space-y-6">
                       <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                           Name *
                         </label>
                         <Input
                           id="name"
-                          name="name"
                           type="text"
                           placeholder="Your name"
                           className="w-full"
                           required
-                          value={formData.name}
-                          onChange={handleInputChange}
                         />
                       </div>
 
@@ -186,12 +139,9 @@ export default function ContactPage() {
                         </label>
                         <Input
                           id="email"
-                          name="email"
                           type="email"
                           placeholder="your.email@example.com"
                           className="w-full"
-                          value={formData.email}
-                          onChange={handleInputChange}
                         />
                       </div>
 
@@ -201,12 +151,9 @@ export default function ContactPage() {
                         </label>
                         <Input
                           id="phone"
-                          name="phone"
                           type="tel"
                           placeholder="+91 98765 43210"
                           className="w-full"
-                          value={formData.phone}
-                          onChange={handleInputChange}
                         />
                       </div>
 
@@ -216,12 +163,9 @@ export default function ContactPage() {
                         </label>
                         <Input
                           id="subject"
-                          name="subject"
                           type="text"
                           placeholder="What is this about?"
                           className="w-full"
-                          value={formData.subject}
-                          onChange={handleInputChange}
                         />
                       </div>
 
@@ -231,22 +175,15 @@ export default function ContactPage() {
                         </label>
                         <Textarea
                           id="message"
-                          name="message"
                           placeholder="Tell us more about your inquiry..."
                           className="w-full min-h-[120px]"
                           required
-                          value={formData.message}
-                          onChange={handleInputChange}
                         />
                       </div>
 
-                      <Button 
-                        type="submit" 
-                        className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3"
-                        disabled={isSubmitting}
-                      >
+                      <Button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-white py-3">
                         <Send className="h-4 w-4 mr-2" />
-                        {isSubmitting ? 'Sending...' : 'Send Message'}
+                        Send Message
                       </Button>
                     </form>
                   </CardContent>
@@ -311,7 +248,7 @@ export default function ContactPage() {
                 alt="Ghar-Ka-Khana Logo"
                 width={200}
                 height={60}
-                className="h-12 w-auto mb-4"
+                className="h-12 w-auto mb-4 brightness-0 invert"
               />
               <p className="text-gray-300 mb-6 max-w-md">
                 Delicious home-cooked meals delivered to your doorstep daily. Taste the love in every bite.
@@ -382,7 +319,6 @@ export default function ContactPage() {
           </div>
         </div>
       </footer>
-      <Toaster position="top-right" />
     </div>
   )
-} 
+}
