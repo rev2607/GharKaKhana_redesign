@@ -45,9 +45,16 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <section className="relative py-8 lg:py-16 overflow-hidden">
-        {/* Background Food Image */}
+        {/* Background Food Video */}
         <div className="absolute inset-0 z-0">
-          <Image src="/images/food.png" alt="Delicious homely meal" fill className="object-cover opacity-20" />
+          <video 
+            src="/images/video.mp4" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="object-cover opacity-20 w-full h-full"
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/80"></div>
         </div>
 
@@ -116,13 +123,15 @@ export default function HomePage() {
 
             {/* Right Visual Content */}
             <div className="relative flex justify-center lg:justify-end">
-              {/* Main Food Image */}
+              {/* Main Food Video */}
               <div className="relative max-w-lg lg:max-w-xl lg:mr-16">
-                <Image
-                  src="/images/food.png"
+                <video
+                  src="/images/video.mp4"
                   alt="Delicious authentic Indian thali"
-                  width={800}
-                  height={600}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="relative rounded-3xl object-cover w-full h-[528px] lg:h-[624px]"
                 />
               </div>
