@@ -33,9 +33,7 @@ export default function BeforeOrderingPage() {
               <Link href="/contact" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Contact Us
               </Link>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-semibold">
-                Login
-              </Button>
+
             </nav>
           </div>
         </div>
@@ -52,101 +50,95 @@ export default function BeforeOrderingPage() {
             
             {/* Main White Card */}
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Left Column */}
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">1</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Advance Booking Required:</span> All orders must be placed at least 24 hours in advance to ensure timely preparation and delivery.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">2</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Full Payment in Advance:</span> Full payment must be made 100% in advance at the time of booking.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">3</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Delivery Limitations:</span> Tiffin delivery will be provided only up to the 1st floor of any building. Customers on higher floors are requested to coordinate accordingly.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">4</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Tiffin Box Return Policy:</span> Customers are required to return the previous day's empty tiffin box at the time of receiving the new one.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">5</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Service Days:</span> 25 Days is for a Month Package & 6 Days for a Week Package; This excludes Sundays and Public Holidays.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">6</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Holiday Schedule:</span> Refer to the Holidays list in 'About' section on our website for the full list of non-service days.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">7</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Delivery Timings:</span> Lunch: 11:00 AM – 1:30 PM & Dinner: 7:00 PM - 9:30 PM</p>
-                    </div>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Advance Booking Required:</span> All orders must be placed at least 24 hours in advance to ensure timely preparation and delivery.</p>
                   </div>
                 </div>
-
-                {/* Right Column */}
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">8</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Service Interruption Policy:</span> In case if company is unable to deliver on a scheduled day, the same will be intimated in advance & will compensate the meal by extending the service period accordingly.</p>
-                    </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Full Payment in Advance:</span> Full payment must be made 100% in advance at the time of booking.</p>
                   </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">9</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Package Options:</span> Tiffin packages are available on a Weekly, Monthly Subscription & Walk-In Take-Away (From Cloud Kitchen Location) basis.</p>
-                    </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Delivery Limitations:</span> Tiffin delivery will be provided only up to the 1st floor of any building. Customers on higher floors are requested to coordinate accordingly.</p>
                   </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">10</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Rajma-Rice Special Note:</span> Considering Rajma-Rice being very Famous Indian Dish Combination, 'When there is a Rajma; Chapathi would be reduced to two and Rice & Rajma Quantity will be more.'</p>
-                    </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Tiffin Box Return Policy:</span> Customers are required to return the previous day's empty tiffin box at the time of receiving the new one.</p>
                   </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">11</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Cancellation Policy:</span> If package is cancelled in between, so far delivered Tiffin prize would be calculated as per Per Day Prize and remaining amount be refunded.</p>
-                    </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Service Days:</span> 25 Days is for a Month Package & 6 Days for a Week Package; This excludes Sundays and Public Holidays.</p>
                   </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">12</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Advance Meal Cancellation:</span> Please inform atleast 1 day in advance if you do not need Meal by next day; otherwise Meal would be calculated for the day.</p>
-                    </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Holiday Schedule:</span> Refer to the Holidays list in 'About' section on our website for the full list of non-service days.</p>
                   </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">13</div>
-                    <div>
-                      <p className="text-gray-700 text-lg"><span className="font-bold">Single Delivery Charge:</span> ₹9/- would be additional charge if 1-Single Delivery Ordered</p>
-                    </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Delivery Timings:</span> Lunch: 11:00 AM – 1:30 PM & Dinner: 7:00 PM - 9:30 PM</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Service Interruption Policy:</span> In case if company is unable to deliver on a scheduled day, the same will be intimated in advance & will compensate the meal by extending the service period accordingly.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Package Options:</span> Tiffin packages are available on a Weekly, Monthly Subscription & Walk-In Take-Away (From Cloud Kitchen Location) basis.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Rajma-Rice Special Note:</span> Considering Rajma-Rice being very Famous Indian Dish Combination, 'When there is a Rajma; Chapathi would be reduced to two and Rice & Rajma Quantity will be more.'</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Cancellation Policy:</span> If package is cancelled in between, so far delivered Tiffin prize would be calculated as per Per Day Prize and remaining amount be refunded.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Advance Meal Cancellation:</span> Please inform atleast 1 day in advance if you do not need Meal by next day; otherwise Meal would be calculated for the day.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-orange-600 rounded-full flex-shrink-0 mt-3"></div>
+                  <div>
+                    <p className="text-gray-700 text-lg"><span className="font-bold">Single Delivery Charge:</span> ₹9/- would be additional charge if 1-Single Delivery Ordered</p>
                   </div>
                 </div>
               </div>
@@ -185,7 +177,7 @@ export default function BeforeOrderingPage() {
                 alt="Ghar-Ka-Khana Logo"
                 width={200}
                 height={60}
-                className="h-12 w-auto mb-4 brightness-0 invert"
+                className="h-16 w-auto mb-4"
               />
               <p className="text-gray-300 mb-6 max-w-md">
                 Delicious home-cooked meals delivered to your doorstep daily. Taste the love in every bite.

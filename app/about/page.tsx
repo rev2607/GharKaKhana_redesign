@@ -34,9 +34,7 @@ export default function AboutPage() {
               <Link href="/contact" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Contact Us
               </Link>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-semibold">
-                Login
-              </Button>
+
             </nav>
           </div>
         </div>
@@ -256,7 +254,7 @@ export default function AboutPage() {
                 alt="Ghar-Ka-Khana Logo"
                 width={200}
                 height={60}
-                className="h-12 w-auto mb-4 brightness-0 invert"
+                className="h-16 w-auto mb-4"
               />
               <p className="text-gray-300 mb-6 max-w-md">
                 Delicious home-cooked meals delivered to your doorstep daily. Taste the love in every bite.

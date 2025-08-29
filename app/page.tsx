@@ -35,9 +35,7 @@ export default function HomePage() {
               <Link href="/contact" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Contact Us
               </Link>
-              <Button className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-2 rounded-full font-semibold">
-                Login
-              </Button>
+
             </nav>
           </div>
         </div>
