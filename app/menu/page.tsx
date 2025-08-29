@@ -1,11 +1,15 @@
+"use client"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Phone, Clock, MapPin, Heart, Shield, Truck, CheckCircle, Star, ArrowLeft } from "lucide-react"
+import { Phone, Clock, MapPin, Heart, Shield, Truck, CheckCircle, Star, ArrowLeft, Menu, X } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 
 export default function MenuPage() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
       {/* Header */}
@@ -35,9 +39,63 @@ export default function MenuPage() {
               <Link href="/contact" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Contact Us
               </Link>
-
             </nav>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden p-2 rounded-lg hover:bg-orange-50 transition-colors"
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-6 w-6 text-gray-700" />
+              ) : (
+                <Menu className="h-6 w-6 text-gray-700" />
+              )}
+            </button>
           </div>
+
+          {/* Mobile Navigation Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden border-t border-orange-100 bg-white">
+              <nav className="px-4 py-4 space-y-3">
+                <Link 
+                  href="/" 
+                  className="block py-3 px-4 text-gray-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Home
+                </Link>
+                <Link 
+                  href="/menu" 
+                  className="block py-3 px-4 text-orange-600 font-semibold border-l-4 border-orange-600 bg-orange-50 rounded-lg"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Menu
+                </Link>
+                <Link 
+                  href="/before-ordering" 
+                  className="block py-3 px-4 text-gray-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Before Ordering
+                </Link>
+                <Link 
+                  href="/about" 
+                  className="block py-3 px-4 text-gray-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  About
+                </Link>
+                <Link 
+                  href="/contact" 
+                  className="block py-3 px-4 text-gray-700 hover:text-orange-600 hover:bg-orange-50 rounded-lg transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Contact Us
+                </Link>
+              </nav>
+            </div>
+          )}
         </div>
       </header>
 
@@ -411,12 +469,17 @@ export default function MenuPage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#about" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  <Link href="/before-ordering" className="text-gray-300 hover:text-orange-400 transition-colors">
+                    Before Ordering
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="text-gray-300 hover:text-orange-400 transition-colors">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#contact" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  <Link href="/contact" className="text-gray-300 hover:text-orange-400 transition-colors">
                     Contact
                   </Link>
                 </li>
