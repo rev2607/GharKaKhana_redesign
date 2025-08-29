@@ -359,6 +359,11 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/before-ordering" className="text-gray-300 hover:text-orange-400 transition-colors">
+                    Before Ordering
+                  </Link>
+                </li>
+                <li>
                   <Link href="/about" className="text-gray-300 hover:text-orange-400 transition-colors">
                     About Us
                   </Link>
