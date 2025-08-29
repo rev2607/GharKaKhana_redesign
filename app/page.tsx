@@ -20,7 +20,7 @@ export default function HomePage() {
               </div>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
-              <Link href="#" className="text-orange-600 font-semibold border-b-2 border-orange-600 pb-1">
+              <Link href="/" className="text-orange-600 font-semibold border-b-2 border-orange-600 pb-1">
                 Home
               </Link>
               <Link href="/menu" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
@@ -291,22 +291,22 @@ export default function HomePage() {
               <h3 className="text-lg font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  <Link href="/" className="text-gray-300 hover:text-orange-400 transition-colors">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="#menu" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  <Link href="/menu" className="text-gray-300 hover:text-orange-400 transition-colors">
                     Menu
                   </Link>
                 </li>
                 <li>
-                  <Link href="#about" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  <Link href="/about" className="text-gray-300 hover:text-orange-400 transition-colors">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="text-gray-300 hover:text-orange-400 transition-colors">
+                  <Link href="/contact" className="text-gray-300 hover:text-orange-400 transition-colors">
                     Contact
                   </Link>
                 </li>
