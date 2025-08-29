@@ -2,9 +2,14 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Ghar Ka Khana',
+  description: 'Delicious home-cooked meals delivered to your doorstep daily. Taste the love in every bite.',
   generator: 'v0.dev',
+  icons: {
+    icon: '/3570168.png',
+    shortcut: '/3570168.png',
+    apple: '/3570168.png',
+  },
 }
 
 export default function RootLayout({
