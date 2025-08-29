@@ -32,7 +32,7 @@ export default function MenuPage() {
               <Link href="/about" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 About
               </Link>
-              <Link href="/#contact" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
+              <Link href="/contact" className="text-gray-700 hover:text-orange-600 font-medium transition-colors">
                 Contact Us
               </Link>
 
