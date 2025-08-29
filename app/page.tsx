@@ -137,23 +137,7 @@ export default function HomePage() {
               </div>
 
               {/* Delivery Service Overlay */}
-              <div className="absolute -bottom-12 -left-8 lg:-left-16">
-                <div className="bg-white p-4 rounded-2xl shadow-xl border-2 border-orange-200">
-                  <div className="flex items-center space-x-4">
-                    <Image
-                      src="/images/delivery.png"
-                      alt="Friendly delivery service"
-                      width={240}
-                      height={180}
-                      className="rounded-lg object-cover"
-                    />
-                    <div>
-                      <div className="text-base font-bold text-gray-900">Friendly Delivery</div>
-                      <div className="text-sm text-gray-600">To your doorstep</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
 
               {/* Floating Quality Badge */}
               <div className="absolute top-0 right-0">

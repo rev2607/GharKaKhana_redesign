@@ -198,8 +198,12 @@ export default function MenuPage() {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
                     <span className="text-2xl">🍗</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-red-700 mb-2">Combo Normal</h3>
-                  <div className="text-3xl font-black text-red-600">NV + Veg</div>
+                  <h3 className="text-2xl font-bold text-black mb-2">Combo Normal</h3>
+                  <div className="text-3xl font-black">
+                    <span className="text-red-600">NV</span>
+                    <span className="text-gray-600"> + </span>
+                    <span className="text-green-600">Veg</span>
+                  </div>
                 </div>
                 
                 <div className="space-y-3 flex-grow">
@@ -213,7 +217,7 @@ export default function MenuPage() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    <span className="text-red-600 font-semibold">Special Chicken Curry</span>
+                    <span className="text-red-600 font-semibold">Wednesday - Chicken Masala Curry & Veg other days</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-red-500 rounded-full"></div>
@@ -248,8 +252,12 @@ export default function MenuPage() {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
                     <span className="text-2xl">👑</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-red-700 mb-2">Combo Special</h3>
-                  <div className="text-3xl font-black text-red-600">NV + Veg</div>
+                  <h3 className="text-2xl font-bold text-black mb-2">Combo Special</h3>
+                  <div className="text-3xl font-black">
+                    <span className="text-red-600">NV</span>
+                    <span className="text-gray-600"> + </span>
+                    <span className="text-green-600">Veg</span>
+                  </div>
                 </div>
                 
                 <div className="space-y-3 flex-grow">
@@ -263,7 +271,7 @@ export default function MenuPage() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    <span className="text-red-600 font-semibold">Special Chicken Curry</span>
+                    <span className="text-red-600 font-semibold">Wednesday - Chicken Masala Curry & Veg other days</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-red-500 rounded-full"></div>
@@ -327,7 +335,7 @@ export default function MenuPage() {
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">3</div>
-                  <p className="text-gray-700 text-lg">Promo plans are one-time offers only.</p>
+                  <p className="text-gray-700 text-lg">Special Meal: Desset, Papad or Pickle, Extra salad & Puri sometimes</p>
                 </div>
               </div>
               <div className="space-y-4">
