@@ -59,12 +59,7 @@ export default function MenuPage() {
             </p>
           </div>
 
-          {/* Special Offer Banner */}
-          <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-6 rounded-2xl shadow-2xl mb-6 text-center">
-            <div className="text-2xl font-bold mb-2">🌟 TASTE OF HOME</div>
-            <div className="text-4xl font-black text-yellow-300 mb-2">Your First Meal for just ₹79!</div>
-            <div className="text-lg opacity-90">Grab this offer as soon as possible</div>
-          </div>
+
         </div>
       </section>
 
