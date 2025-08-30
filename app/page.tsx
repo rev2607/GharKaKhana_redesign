@@ -122,11 +122,25 @@ export default function HomePage() {
             <div className="space-y-6">
               {/* Introductory Offer - Most Prominent */}
               <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white p-6 rounded-2xl shadow-2xl transform -rotate-1 hover:rotate-0 transition-transform">
-                <div className="text-center">
-                  <div className="text-sm font-semibold mb-2 opacity-90">🌟 TASTE OF HOME</div>
-                  <div className="text-3xl lg:text-4xl font-bold mb-2">Your First Meal for just</div>
-                  <div className="text-5xl lg:text-6xl font-black text-yellow-300 mb-2">₹79!</div>
-                  <div className="text-sm opacity-90">Grab this offer as soon as possible</div>
+                <div className="flex items-center justify-between">
+                  {/* Left Side - Text Content */}
+                  <div className="flex-1 text-center">
+                    <div className="text-sm font-semibold mb-2 opacity-90">🌟 TASTE OF HOME</div>
+                    <div className="text-3xl lg:text-4xl font-bold mb-2">Your First Meal for just</div>
+                    <div className="text-5xl lg:text-6xl font-black text-yellow-300 mb-2">₹79!</div>
+                    <div className="text-sm opacity-90">Grab this offer as soon as possible</div>
+                  </div>
+                  
+                  {/* Right Side - QR Code */}
+                  <div className="flex-shrink-0 ml-6">
+                    <Image 
+                      src="/qr.jpeg" 
+                      alt="QR Code for Ghar Ka Khana" 
+                      width={120} 
+                      height={120} 
+                      className="rounded-lg shadow-lg"
+                    />
+                  </div>
                 </div>
               </div>
 
