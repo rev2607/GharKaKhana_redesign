@@ -16,7 +16,9 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <Image src="/images/logo.png" alt="Ghar-Ka-Khana Logo" width={200} height={60} className="h-12 w-auto" />
+              <Link href="/" className="cursor-pointer hover:opacity-80 transition-opacity">
+                <Image src="/images/logo.png" alt="Ghar-Ka-Khana Logo" width={200} height={60} className="h-12 w-auto" />
+              </Link>
               <div className="hidden lg:block">
                 <div className="text-lg font-bold text-gray-900">Cloud Kitchen</div>
                 <div className="text-sm text-gray-600">Free Homely Food Delivery at your Home & Office</div>
