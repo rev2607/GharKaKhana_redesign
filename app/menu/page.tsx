@@ -159,7 +159,7 @@ export default function MenuPage() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-gray-700">Salad/Papad/Pickle</span>
+                    <span className="text-gray-700">Salad</span>
                   </div>
                 </div>
 
@@ -272,7 +272,7 @@ export default function MenuPage() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    <span className="text-gray-700">Salad/Papad/Pickle</span>
+                    <span className="text-gray-700">Salad</span>
                   </div>
                 </div>
 

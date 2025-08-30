@@ -249,10 +249,7 @@ export default function HomePage() {
                     <CheckCircle className="h-4 w-4 text-green-600" />
                     <span>Masala - No packaged masalas; we use fresh spices.</span>
                   </li>
-                  <li className="flex items-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-green-600" />
-                    <span>Chapathi Flour – We do not use packaged flour for chapathis.</span>
-                  </li>
+
                 </ul>
               </CardContent>
             </Card>
