@@ -374,7 +374,7 @@ export default function MenuPage() {
           {/* Important Notes */}
           <div className="mt-12 bg-gray-50 p-8 rounded-2xl border border-gray-200">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Important Notes</h3>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">1</div>
@@ -382,28 +382,20 @@ export default function MenuPage() {
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">2</div>
-                  <p className="text-gray-700 text-lg">One Time Refundable Security Deposit ₹299/- to be paid towards Tiffin Box</p>
+                  <p className="text-gray-700 text-lg">No service on Sundays and public holidays.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">3</div>
-                  <p className="text-gray-700 text-lg">Special Meal: Desset, Papad or Pickle, Extra salad & Puri sometimes</p>
+                  <p className="text-gray-700 text-lg">Weekly = 6 days, Monthly = 25 days.</p>
                 </div>
               </div>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">4</div>
-                  <p className="text-gray-700 text-lg">No service on Sundays and public holidays.</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">5</div>
-                  <p className="text-gray-700 text-lg">Weekly = 6 days, Monthly = 25 days.</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">6</div>
                   <p className="text-gray-700 text-lg">Combo pack have 1 day (Wednesday) Chicken and remaining 5 days Veg</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">7</div>
+                  <div className="bg-orange-100 text-orange-600 w-7 h-7 rounded-full flex items-center justify-center text-base font-bold flex-shrink-0 mt-0.5">5</div>
                   <p className="text-gray-700 text-lg">₹9/- would be additional charge if 1-Single Delivery Ordered</p>
                 </div>
               </div>
