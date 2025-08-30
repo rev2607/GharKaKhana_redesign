@@ -108,16 +108,14 @@ export default function MenuPage() {
       </div>
 
       {/* Menu Hero Section */}
-      <section className="py-8 lg:py-16">
+      <section className="py-4 lg:py-8 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Our Complete Menu</h1>
+          <div className="text-center mb-6">
+            <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-3">Our Complete Menu</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Choose from our variety of meal plans designed to suit different preferences and budgets
             </p>
           </div>
-
-
         </div>
       </section>
 
