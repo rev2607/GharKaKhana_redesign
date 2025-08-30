@@ -155,13 +155,13 @@ export default function HomePage() {
                     View Full Menu
                   </Button>
                 </Link>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-orange-600 text-orange-600 hover:bg-orange-50 px-8 py-4 rounded-full text-lg font-semibold bg-transparent"
+                <a 
+                  href="tel:+918108325444"
+                  className="inline-flex items-center justify-center px-8 py-4 rounded-full text-lg font-semibold border-2 border-orange-600 text-orange-600 hover:bg-orange-50 bg-transparent transition-all duration-300 hover:scale-105 active:scale-95 cursor-pointer group phone-buzz"
                 >
-                  📞 +91 81083 25444
-                </Button>
+                  <span className="inline-block">📞</span>
+                  <span className="ml-2">+91 81083 25444</span>
+                </a>
               </div>
 
               {/* Trust Indicators */}
