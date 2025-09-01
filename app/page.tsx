@@ -297,6 +297,34 @@ export default function HomePage() {
 
 
 
+      {/* Location Map Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Find Us</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Visit our cloud kitchen or get directions to Ghar Ka Khana</p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.1234567890123!2d73.0352808!3d19.016488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3a7b054efb7%3A0xba276bc16e91f56!2sGhar%20Ka%20Khana!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ghar Ka Khana Location"
+                className="w-full h-[450px]"
+              ></iframe>
+            </div>
+            
+
+          </div>
+        </div>
+      </section>
+
       {/* How It Works Section */}
       <section id="how-it-works" className="py-8 bg-white">
         <div className="container mx-auto px-4">
