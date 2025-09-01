@@ -24,6 +24,14 @@ export default function HomePage() {
                 <div className="text-lg font-bold text-gray-900">Cloud Kitchen</div>
                 <div className="text-sm text-gray-600">Free Homely Food Delivery at your Home & Office</div>
               </div>
+              <a 
+                href="tel:+918108325444" 
+                className="flex items-center space-x-2 text-orange-600 font-semibold hover:text-orange-700 transition-colors cursor-pointer bg-orange-50 hover:bg-orange-100 px-3 py-2 rounded-lg text-sm select-none"
+                style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none' }}
+              >
+                <span className="text-lg">📞</span>
+                <span>+91 81083 25444</span>
+              </a>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
               <Link href="/" className="text-orange-600 font-semibold border-b-2 border-orange-600 pb-1">
