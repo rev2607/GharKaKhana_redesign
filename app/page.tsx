@@ -30,7 +30,7 @@ export default function HomePage() {
                 style={{ userSelect: 'none', WebkitUserSelect: 'none', MozUserSelect: 'none', msUserSelect: 'none' }}
               >
                 <span className="text-lg">📞</span>
-                <span>+91 81083 25444</span>
+                <span>Call</span>
               </a>
             </div>
             <nav className="hidden md:flex items-center space-x-8">
@@ -153,12 +153,12 @@ export default function HomePage() {
               </div>
 
               {/* Free Delivery Highlight */}
-              <div className="bg-green-50 border-2 border-green-200 p-4 rounded-xl">
+              <div className="bg-gray-800 border-2 border-gray-600 p-4 rounded-xl">
                 <div className="flex items-center space-x-3">
-                  <div className="bg-green-500 text-white p-2 rounded-full">
+                  <div className="bg-yellow-300 text-black p-2 rounded-full">
                     <Truck className="h-5 w-5" />
                   </div>
-                  <div className="text-2xl font-bold text-green-700">FREE Home Delivery*</div>
+                  <div className="text-2xl font-bold text-yellow-300">FREE Home Delivery*</div>
                 </div>
               </div>
 
