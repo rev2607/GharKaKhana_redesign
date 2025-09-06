@@ -398,8 +398,8 @@ export default function MenuPage() {
                 <div className="mt-auto pt-6">
                   <div className="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">
                     <div className="text-center">
-                      <div className="text-sm text-gray-600 mb-1">One day takeaway</div>
-                      <div className="text-lg font-bold text-red-800">₹120</div>
+                      <div className="text-sm text-gray-600 mb-1">Price</div>
+                      <div className="text-lg font-bold text-red-800">₹110</div>
                     </div>
                   </div>
                 </div>
@@ -445,8 +445,8 @@ export default function MenuPage() {
                 <div className="mt-auto pt-6">
                   <div className="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">
                     <div className="text-center">
-                      <div className="text-sm text-gray-600 mb-1">One day takeaway</div>
-                      <div className="text-lg font-bold text-red-800">₹130</div>
+                      <div className="text-sm text-gray-600 mb-1">Price</div>
+                      <div className="text-lg font-bold text-red-800">₹120</div>
                     </div>
                   </div>
                 </div>
