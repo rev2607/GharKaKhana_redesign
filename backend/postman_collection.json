@@ -1,0 +1,10 @@
+{
+  "info": { "name": "Ghar Ka Khana API", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json" },
+  "item": [
+    { "name": "Health", "request": { "method": "GET", "url": "http://localhost:4000/health" } },
+    { "name": "Auth Me", "request": { "method": "GET", "header": [ { "key": "Authorization", "value": "Bearer {{SUPABASE_JWT}}" } ], "url": "http://localhost:4000/api/v1/auth/me" } },
+    { "name": "List Plans", "request": { "method": "GET", "url": "http://localhost:4000/api/v1/plans" } },
+    { "name": "Create Order", "request": { "method": "POST", "header": [ { "key": "Authorization", "value": "Bearer {{SUPABASE_JWT}}" }, { "key": "Content-Type", "value": "application/json" } ], "body": { "mode": "raw", "raw": "{\n  \"mealplan_id\": \"<plan_id>\",\n  \"start_date\": \"2025-01-01\"\n}" }, "url": "http://localhost:4000/api/v1/orders" } },
+    { "name": "Webhook (simulate)", "request": { "method": "POST", "header": [ { "key": "Content-Type", "value": "application/json" }, { "key": "X-Razorpay-Signature", "value": "test" } ], "body": { "mode": "raw", "raw": "{\n  \"event\": \"payment.captured\",\n  \"payload\": {\n    \"payment\": {\n      \"entity\": {\n        \"id\": \"pay_123\",\n        \"order_id\": \"rzp_order_123\"\n      }\n    }\n  }\n}" }, "url": "http://localhost:4000/api/v1/payments/razorpay/webhook" } }
+  ]
+}

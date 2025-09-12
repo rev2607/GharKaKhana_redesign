@@ -11,12 +11,36 @@
     "/health": {
       "get": {
         "summary": "Health check",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
+        "responses": { "200": { "description": "OK" } }
       }
+    },
+    "/api/v1/auth/me": {
+      "get": {
+        "summary": "Get current user (Supabase JWT)",
+        "security": [{ "bearerAuth": [] }],
+        "responses": { "200": { "description": "User" }, "401": { "description": "Unauthorized" } }
+      }
+    },
+    "/api/v1/plans": {
+      "get": { "summary": "List meal plans", "responses": { "200": { "description": "OK" } } },
+      "post": { "summary": "Create plan (admin)", "security": [{ "bearerAuth": [] }], "responses": { "201": { "description": "Created" }, "403": { "description": "Forbidden" } } }
+    },
+    "/api/v1/plans/{slug}": {
+      "get": { "summary": "Get plan by slug", "parameters": [{ "name": "slug", "in": "path", "required": true, "schema": { "type": "string" } }], "responses": { "200": { "description": "OK" }, "404": { "description": "Not found" } } }
+    },
+    "/api/v1/orders": {
+      "post": { "summary": "Create order and Razorpay order", "security": [{ "bearerAuth": [] }], "responses": { "201": { "description": "Created" }, "401": { "description": "Unauthorized" } } }
+    },
+    "/api/v1/orders/{id}": {
+      "get": { "summary": "Get order", "security": [{ "bearerAuth": [] }], "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "string" } }], "responses": { "200": { "description": "OK" }, "403": { "description": "Forbidden" }, "404": { "description": "Not found" } } }
+    },
+    "/api/v1/payments/razorpay/webhook": {
+      "post": { "summary": "Razorpay webhook", "responses": { "200": { "description": "OK" } } }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": { "type": "http", "scheme": "bearer", "bearerFormat": "JWT" }
     }
   }
 }

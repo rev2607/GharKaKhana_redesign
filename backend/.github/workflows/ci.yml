@@ -1,0 +1,42 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install deps
+        run: |
+          cd backend
+          npm ci || npm i
+      - name: Lint
+        run: |
+          cd backend
+          npm run lint
+      - name: Build
+        run: |
+          cd backend
+          npm run build --if-present
+      - name: Test
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/test
+          SUPABASE_URL: http://localhost
+          SUPABASE_ANON_KEY: test
+          SUPABASE_SERVICE_ROLE_KEY: test
+          SUPABASE_JWT_SECRET: test
+          SUPABASE_STORAGE_BUCKET: test
+          RAZORPAY_KEY_ID: test
+          RAZORPAY_KEY_SECRET: test
+          RAZORPAY_WEBHOOK_SECRET: test
+        run: |
+          cd backend
+          npm test -- --ci --reporters=default
+
