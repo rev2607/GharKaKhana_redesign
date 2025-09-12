@@ -1,0 +1,105 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  CUSTOMER
+  ADMIN
+}
+
+enum OrderStatus {
+  PENDING_PAYMENT
+  PAID
+  ACTIVE
+  CANCELLED
+}
+
+enum RefundStatus {
+  PENDING
+  REVIEWED
+  REFUNDED
+  REJECTED
+}
+
+model User {
+  id               String   @id @default(cuid())
+  phone            String   @unique
+  email            String?
+  name             String?
+  address_line1    String
+  address_line2    String?
+  city             String
+  pincode          String
+  state            String
+  role             Role     @default(CUSTOMER)
+  supabase_user_id String   @unique
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+
+  orders           Order[]
+  refundRequests   RefundRequest[]
+}
+
+model MealPlan {
+  id             String   @id @default(cuid())
+  name           String
+  slug           String   @unique
+  description    String
+  price_in_inr   Int
+  duration_days  Int
+  meals_per_day  Int
+  image_url      String?
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+
+  orders         Order[]
+}
+
+model Order {
+  id                   String       @id @default(cuid())
+  user_id              String
+  mealplan_id          String
+  plan_name_snapshot   String
+  amount_in_inr        Int
+  duration_days        Int
+  start_date           DateTime
+  end_date             DateTime
+  razorpay_order_id    String?
+  razorpay_payment_id  String?
+  razorpay_signature   String?
+  status               OrderStatus  @default(PENDING_PAYMENT)
+  created_at           DateTime     @default(now())
+  updated_at           DateTime     @updatedAt
+
+  user     User     @relation(fields: [user_id], references: [id])
+  mealPlan MealPlan @relation(fields: [mealplan_id], references: [id])
+  refundRequests RefundRequest[]
+
+  @@index([user_id])
+  @@index([mealplan_id])
+  @@index([razorpay_order_id])
+}
+
+model RefundRequest {
+  id         String        @id @default(cuid())
+  order_id   String
+  user_id    String
+  reason     String
+  status     RefundStatus  @default(PENDING)
+  admin_note String?
+  created_at DateTime      @default(now())
+  updated_at DateTime      @updatedAt
+
+  order Order @relation(fields: [order_id], references: [id])
+  user  User  @relation(fields: [user_id], references: [id])
+
+  @@index([order_id])
+  @@index([user_id])
+}
+
+
