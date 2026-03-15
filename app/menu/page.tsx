@@ -146,7 +146,7 @@ export default function MenuPage() {
                     <span className="text-2xl">🥗</span>
                   </div>
                   <h3 className="text-2xl font-bold text-green-700 mb-2">Veg Normal</h3>
-                  <div className="text-3xl font-black text-green-600">₹79</div>
+                  <div className="text-3xl font-black text-green-600">₹85</div>
                   <div className="text-sm text-gray-500">per meal</div>
                 </div>
                 
@@ -177,14 +177,14 @@ export default function MenuPage() {
                   <div className="bg-green-50 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Weekly</div>
-                      <div className="text-lg font-bold text-green-700">₹474</div>
+                      <div className="text-lg font-bold text-green-700">₹510</div>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-green-100 to-green-200 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Monthly</div>
                       <div className="text-lg font-bold text-green-800">
-                        <span className="line-through text-gray-500">₹1975</span> ₹1925
+                        <span className="line-through text-gray-500">₹2125</span> ₹2075
                       </div>
                     </div>
                   </div>
@@ -213,7 +213,7 @@ export default function MenuPage() {
                     <span className="text-2xl">🌟</span>
                   </div>
                   <h3 className="text-2xl font-bold text-green-700 mb-2">Veg Special</h3>
-                  <div className="text-3xl font-black text-green-600">₹89</div>
+                  <div className="text-3xl font-black text-green-600">₹95</div>
                   <div className="text-sm text-gray-500">per meal</div>
                 </div>
                 
@@ -248,14 +248,14 @@ export default function MenuPage() {
                   <div className="bg-green-50 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Weekly</div>
-                      <div className="text-lg font-bold text-green-700">₹534</div>
+                      <div className="text-lg font-bold text-green-700">₹570</div>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-green-100 to-green-200 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Monthly</div>
                       <div className="text-lg font-bold text-green-800">
-                        <span className="line-through text-gray-500">₹2225</span> ₹2175
+                        <span className="line-through text-gray-500">₹2375</span> ₹2325
                       </div>
                     </div>
                   </div>
@@ -318,14 +318,14 @@ export default function MenuPage() {
                   <div className="bg-red-50 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Weekly</div>
-                      <div className="text-lg font-bold text-red-700">₹546</div>
+                      <div className="text-lg font-bold text-red-700">₹550</div>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Monthly</div>
                       <div className="text-lg font-bold text-red-800">
-                        <span className="line-through text-gray-500">₹2223</span> ₹2205
+                        <span className="line-through text-gray-500">₹2485</span> ₹2426
                       </div>
                     </div>
                   </div>
@@ -392,14 +392,14 @@ export default function MenuPage() {
                   <div className="bg-red-50 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Weekly</div>
-                      <div className="text-lg font-bold text-red-700">₹606</div>
+                      <div className="text-lg font-bold text-red-700">₹570</div>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Monthly</div>
                       <div className="text-lg font-bold text-red-800">
-                        <span className="line-through text-gray-500">₹2475</span> ₹2455
+                        <span className="line-through text-gray-500">₹2735</span> ₹2676
                       </div>
                     </div>
                   </div>
@@ -455,7 +455,7 @@ export default function MenuPage() {
                   <div className="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Price</div>
-                      <div className="text-lg font-bold text-red-800">₹115</div>
+                      <div className="text-lg font-bold text-red-800">₹125</div>
                     </div>
                   </div>
                   <div className="mt-3">
@@ -509,7 +509,7 @@ export default function MenuPage() {
                   <div className="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Price</div>
-                      <div className="text-lg font-bold text-red-800">₹125</div>
+                      <div className="text-lg font-bold text-red-800">₹135</div>
                     </div>
                   </div>
                   <div className="mt-3">

@@ -145,7 +145,7 @@ export default function HomePage() {
                   <div className="flex-1 text-center">
                     <div className="text-sm font-semibold mb-2 opacity-90">🌟 TASTE OF HOME</div>
                     <div className="text-3xl lg:text-4xl font-bold mb-2">Your First Meal for just</div>
-                    <div className="text-5xl lg:text-6xl font-black text-yellow-300 mb-2">₹79!</div>
+                    <div className="text-5xl lg:text-6xl font-black text-yellow-300 mb-2">₹85!</div>
                     <div className="text-sm opacity-90">Grab this offer as soon as possible</div>
                   </div>
                   
