@@ -318,7 +318,7 @@ export default function MenuPage() {
                   <div className="bg-red-50 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Weekly</div>
-                      <div className="text-lg font-bold text-red-700">₹550</div>
+                      <div className="text-lg font-bold text-red-700">₹590</div>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">
@@ -392,7 +392,7 @@ export default function MenuPage() {
                   <div className="bg-red-50 p-4 rounded-xl">
                     <div className="text-center">
                       <div className="text-sm text-gray-600 mb-1">Weekly</div>
-                      <div className="text-lg font-bold text-red-700">₹570</div>
+                      <div className="text-lg font-bold text-red-700">₹626</div>
                     </div>
                   </div>
                   <div className="bg-gradient-to-r from-red-100 to-red-200 p-4 rounded-xl">

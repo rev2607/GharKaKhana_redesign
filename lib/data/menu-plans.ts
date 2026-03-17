@@ -54,7 +54,7 @@ export const MENU_PLANS: MenuPlan[] = [
     description: 'Mixed meal plan with 2 days chicken (Wed & Fri) and 4 days vegetarian',
     pricePerMeal: 84,
     // Updated as per latest pricing sheet
-    weeklyPrice: 550,
+    weeklyPrice: 590,
     monthlyPrice: 2426,
     features: [
       'Chapathi',
@@ -74,7 +74,7 @@ export const MENU_PLANS: MenuPlan[] = [
     description: 'Premium mixed meal plan with additional dessert and compliments',
     pricePerMeal: 94,
     // Updated as per latest pricing sheet
-    weeklyPrice: 570,
+    weeklyPrice: 626,
     monthlyPrice: 2676,
     features: [
       'Chapathi',
