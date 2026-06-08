@@ -31,9 +31,9 @@ export const MENU_PLANS: MenuPlan[] = [
     type: 'veg',
     category: 'special',
     description: 'Premium vegetarian meal with additional dessert, sweets, or double salad',
-    pricePerMeal: 95,
-    weeklyPrice: 570,
-    monthlyPrice: 2325,
+    pricePerMeal: 99,
+    weeklyPrice: 594,
+    monthlyPrice: 2400,
     features: [
       'Chapathis (May be combined)',
       'Rice',
@@ -55,7 +55,7 @@ export const MENU_PLANS: MenuPlan[] = [
     pricePerMeal: 84,
     // Updated as per latest pricing sheet
     weeklyPrice: 590,
-    monthlyPrice: 2426,
+    monthlyPrice: 2400,
     features: [
       'Chapathi',
       'Rice',
@@ -74,8 +74,8 @@ export const MENU_PLANS: MenuPlan[] = [
     description: 'Premium mixed meal plan with additional dessert and compliments',
     pricePerMeal: 94,
     // Updated as per latest pricing sheet
-    weeklyPrice: 626,
-    monthlyPrice: 2676,
+    weeklyPrice: 676,
+    monthlyPrice: 2728,
     features: [
       'Chapathi',
       'Rice',
@@ -112,7 +112,7 @@ export const MENU_PLANS: MenuPlan[] = [
     type: 'non-veg',
     category: 'special',
     description: 'Premium non-vegetarian meal with additional dessert and compliments',
-    pricePerMeal: 135,
+    pricePerMeal: 140,
     weeklyPrice: 750,
     monthlyPrice: 3125,
     features: [
