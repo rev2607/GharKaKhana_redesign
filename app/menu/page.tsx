@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Phone, Clock, MapPin, Heart, Shield, Truck, CheckCircle, Star, ArrowLeft, Menu, X } from "lucide-react"
+import { Phone, Clock, MapPin, Heart, Shield, Truck, CheckCircle, Star, ArrowLeft, Menu, X, Mail } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
@@ -611,6 +611,12 @@ export default function MenuPage() {
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-orange-400" />
                   <span className="text-lg font-semibold">+91 8108 325 444</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="h-5 w-5 text-orange-400" />
+                  <a href="mailto:gkkgharkakhana@gmail.com" className="text-gray-300 hover:text-orange-400 transition-colors">
+                    gkkgharkakhana@gmail.com
+                  </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-orange-400" />
